@@ -34,8 +34,8 @@ function EpisodeEntry({ episode }: { episode: Episode }) {
       className="py-10 sm:py-12"
     >
       <Container>
-        <div className="flex gap-8">
-          <div className="flex aspect-square w-full max-w-48 grow-0 items-end">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
+          <div className="flex aspect-square w-full max-w-24 sm:max-w-48 grow-0 items-end">
             <Link href={`/${episode.id}`}>
               <img
                 src={episode.image!}
